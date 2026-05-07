@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Theme Toggle Logic
-    const themeToggles = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
+    const themeToggles = document.querySelectorAll('.theme-toggle, .theme-toggle-mobile');
     const htmlElement = document.documentElement;
 
     const toggleTheme = () => {
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // RTL Toggle Logic
-    const rtlToggles = document.querySelectorAll('#rtl-toggle');
+    const rtlToggles = document.querySelectorAll('.rtl-toggle');
     const toggleRTL = () => {
         const currentDir = htmlElement.getAttribute('dir');
         const newDir = currentDir === 'rtl' ? 'ltr' : 'rtl';

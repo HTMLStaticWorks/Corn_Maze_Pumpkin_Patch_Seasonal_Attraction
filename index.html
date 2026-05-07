@@ -28,7 +28,7 @@
 
             <!-- Logo (Center on Mobile, Left on Desktop) -->
             <a class="navbar-brand mx-auto ms-lg-0" href="index.html">
-                <img src="assets/images/logo.svg" alt="Harvest Haven Logo">
+                <img src="assets/images/logo.svg" alt="Harvest Haven Logo" class="logo-bg">
             </a>
 
             <!-- Desktop Navigation (Hidden < 1100px) -->
@@ -44,11 +44,13 @@
             </div>
 
             <!-- Header Actions (RTL + Theme Toggle + CTA) -->
-            <div class="d-flex align-items-center">
-                <button id="rtl-toggle" class="btn me-1" title="Toggle RTL">RTL</button>
-                <button id="theme-toggle" class="btn me-2" title="Toggle Theme">
-                    <i class="bi bi-moon-stars-fill theme-icon fs-4"></i>
-                </button>
+            <div class="header-actions d-flex align-items-center">
+                <div class="d-none d-lg-flex align-items-center">
+                    <button class="rtl-toggle btn me-1" title="Toggle RTL">RTL</button>
+                    <button class="theme-toggle btn me-2" title="Toggle Theme">
+                        <i class="bi bi-moon-stars-fill theme-icon fs-4"></i>
+                    </button>
+                </div>
                 <a href="login.html" class="btn btn-primary d-none d-lg-block">Get Tickets</a>
             </div>
         </nav>
@@ -56,8 +58,7 @@
 
     <!-- Offcanvas Mobile Menu -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header border-bottom">
-            <a href="index.html"><img src="assets/images/logo.svg" alt="Logo" height="30"></a>
+        <div class="offcanvas-header border-bottom justify-content-end">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -72,28 +73,36 @@
             <div class="mt-4">
                 <a href="login.html" class="btn btn-primary w-100">Login / Register</a>
             </div>
-            <div class="mt-auto pt-4 text-center border-top">
-                <button id="rtl-toggle" class="btn btn-sm">RTL</button>
+            <div class="mt-auto pt-4 border-top">
+                <div class="d-flex align-items-center justify-content-between">
+                    <span class="fw-bold">Settings</span>
+                    <div class="d-flex gap-2">
+                        <button class="rtl-toggle btn btn-sm">RTL</button>
+                        <button class="theme-toggle btn btn-sm">
+                            <i class="bi bi-moon-stars-fill theme-icon fs-5"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Hero Section -->
     <main>
-        <section class="hero position-relative vh-100 d-flex align-items-center overflow-hidden">
+        <section class="hero min-vh-100 d-flex align-items-center">
             <div class="position-absolute top-0 start-0 w-100 h-100 z-n1">
                 <img src="assets/images/harvest_hero_bg.png" alt="Harvest Hero" class="w-100 h-100 object-fit-cover">
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
             </div>
             <div class="container text-white position-relative">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 text-center text-lg-start">
                         <span class="badge bg-primary mb-3 px-3 py-2 text-uppercase tracking-widest">Opening September
                             20th</span>
                         <h1 class="display-1 mb-4">Magic of the <span class="text-primary">Harvest</span> Season.</h1>
-                        <p class="lead mb-5 opacity-75">Step into a world of autumnal wonder. Explore our 10-acre corn
-                            maze, pick the perfect pumpkin, and create memories that last a lifetime.</p>
-                        <div class="d-flex flex-wrap gap-3">
+                        <p class="lead mb-5 opacity-75">Step into a world of autumnal wonder. Explore our
+                            maze, pick the pumpkin, and create memories that last a lifetime.</p>
+                        <div class="btn-group-responsive justify-content-center justify-content-lg-start">
                             <a href="home-2.html" class="btn btn-primary btn-lg px-5">Explore the Maze</a>
                             <a href="services.html" class="btn btn-outline-light btn-lg px-5">Our Attractions</a>
                         </div>
@@ -153,11 +162,11 @@
         <!-- CTA Section -->
         <section>
             <div class="container">
-                <div class="bg-primary text-white p-5 p-lg-5 rounded-5 text-center position-relative overflow-hidden">
+                <div class="bg-primary text-white p-4 p-md-5 rounded-5 text-center position-relative overflow-hidden">
                     <h2 class="display-4 mb-4">Ready to Get Lost in the Magic?</h2>
                     <p class="lead mb-5 opacity-75 mx-auto" style="max-width: 700px;">Join thousands of families for the
                         biggest harvest festival of the year. Book your group tickets now and save up to 20%!</p>
-                    <div class="d-flex justify-content-center gap-3">
+                    <div class="btn-group-responsive justify-content-center">
                         <a href="pricing.html" class="btn btn-light btn-lg px-5 rounded-pill text-primary fw-bold">Get
                             Your Tickets</a>
                         <a href="contact.html" class="btn btn-outline-light btn-lg px-5 rounded-pill">Contact Groups</a>
@@ -323,7 +332,7 @@
                 <!-- Column 1: Brand -->
                 <div class="col-lg-4">
                     <a href="index.html" class="d-inline-block mb-4">
-                        <img src="assets/images/logo.svg" alt="Harvest Haven Logo" height="40">
+                        <img src="assets/images/logo.svg" alt="Harvest Haven Logo" class="logo-bg">
                     </a>
                     <p class="text-muted mb-4">Dedicated to preserving the spirit of the harvest through fun,
                         educational, and magical outdoor experiences.</p>

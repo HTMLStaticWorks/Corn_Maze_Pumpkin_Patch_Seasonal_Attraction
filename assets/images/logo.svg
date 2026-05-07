@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
   <!-- Icon: Stylized Leaf -->
   <g transform="translate(10, 10)">
     <path d="M20 0C20 0 0 10 0 25C0 40 15 40 15 40L15 45L25 45L25 40C25 40 40 40 40 25C40 10 20 0 20 0Z" fill="#f97316" />
@@ -7,7 +7,7 @@
     <path d="M20 25L30 35" stroke="white" stroke-width="2" stroke-linecap="round" />
   </g>
   <!-- Text: Harvest Haven -->
-  <text x="65" y="42" font-family="'Outfit', sans-serif" font-weight="800" font-size="28" fill="#1e293b">
+  <text x="55" y="35" font-family="'Outfit', sans-serif" font-weight="600" font-size="20" fill="#1e293b">
     Harvest<tspan fill="#f97316">Haven</tspan>
   </text>
 </svg>
