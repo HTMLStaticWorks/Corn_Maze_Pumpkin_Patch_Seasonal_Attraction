@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (backToTop) {
             if (window.pageYOffset > 300) {
-                backToTop.style.display = 'block';
+                backToTop.style.display = 'flex';
             } else {
                 backToTop.style.display = 'none';
             }

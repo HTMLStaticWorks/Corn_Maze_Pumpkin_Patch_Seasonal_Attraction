@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 
 <body>
@@ -83,10 +85,14 @@
 
     <main class="mt-5 pt-5">
         <!-- Page Header -->
-        <section class="py-5 bg-light">
-            <div class="container text-center py-5">
+        <section class="page-hero">
+            <div class="page-hero-bg">
+                <img src="assets/images/contact_hero_bg.png" alt="Contact Hero">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container py-5">
                 <h1 class="display-3 mb-4">Get in <span class="text-primary">Touch</span></h1>
-                <p class="lead text-muted mx-auto" style="max-width: 700px;">Have questions about group bookings or
+                <p class="lead text-white mx-auto" style="max-width: 700px;">Have questions about group bookings or
                     seasonal events? We'd love to hear from you.</p>
             </div>
         </section>
@@ -140,7 +146,7 @@
                                 </div>
                                 <div>
                                     <h4 class="h6 mb-1 fw-bold">Location</h4>
-                                    <p class="text-muted mb-0">123 Harvest Road, Pumpkin Valley, PV 45678</p>
+                                    <p class="mb-0">123 Harvest Road, Pumpkin Valley, PV 45678</p>
                                 </div>
                             </div>
                             <div class="d-flex align-items-start mb-4">
@@ -150,7 +156,7 @@
                                 </div>
                                 <div>
                                     <h4 class="h6 mb-1 fw-bold">Phone</h4>
-                                    <p class="text-muted mb-0">+1 (234) 567-890</p>
+                                    <p class="mb-0">+1 (234) 567-890</p>
                                 </div>
                             </div>
                             <div class="d-flex align-items-start mb-4">
@@ -160,7 +166,7 @@
                                 </div>
                                 <div>
                                     <h4 class="h6 mb-1 fw-bold">Email</h4>
-                                    <p class="text-muted mb-0">hello@harvesthaven.com</p>
+                                    <p class="mb-0">hello@harvesthaven.com</p>
                                 </div>
                             </div>
                         </div>
@@ -182,18 +188,18 @@
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
                         <h2 class="display-5 mb-4">Finding Your <span class="text-primary">Way</span></h2>
-                        <p class="text-muted lead mb-4">We're located just 20 minutes from downtown, tucked away in the
+                        <p class="lead mb-4">We're located just 20 minutes from downtown, tucked away in the
                             beautiful rolling hills of Pumpkin Valley.</p>
                         <div class="p-4 bg-white rounded-4 shadow-sm mb-4">
                             <h5 class="h6 fw-bold mb-3"><img src="assets/images/icons/hayride.png" alt="Parking"
                                     class="icon-image me-2" style="width: 32px; height: 32px;"> Parking Information</h5>
-                            <p class="small text-muted mb-0">Free parking is available for all guests. We have dedicated
+                            <p class="small mb-0">Free parking is available for all guests. We have dedicated
                                 spots for buses and disabled parking near the main entrance.</p>
                         </div>
                         <div class="p-4 bg-white rounded-4 shadow-sm">
                             <h5 class="h6 fw-bold mb-3"><i class="bi bi-signpost-split-fill text-primary me-2"></i>
                                 Driving Tips</h5>
-                            <p class="small text-muted mb-0">The roads leading to the farm are scenic but winding. We
+                            <p class="small mb-0">The roads leading to the farm are scenic but winding. We
                                 recommend arriving at least 30 minutes before your scheduled hayride.</p>
                         </div>
                     </div>
@@ -232,7 +238,7 @@
                 <div class="bg-dark text-white p-5 rounded-5 overflow-hidden position-relative">
                     <div class="position-relative z-1">
                         <h2 class="display-5 mb-4">Join the <span class="text-primary">Harvest Team</span></h2>
-                        <p class="lead mb-5 opacity-75 mx-auto" style="max-width: 700px;">We're looking for enthusiastic
+                        <p class="lead mb-5 mx-auto" style="max-width: 700px;">We're looking for enthusiastic
                             people to join our seasonal staff. From maze monitors to kitchen assistants, help us create
                             magic!</p>
                         <div class="row g-4 justify-content-center mb-5">
@@ -280,15 +286,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="py-5 border-top bg-white">
+    <footer class="site-footer border-top">
         <div class="container">
-            <div class="row g-5 mb-5">
+            <div class="row g-5 mb-4">
                 <!-- Column 1: Brand -->
                 <div class="col-lg-4">
                     <a href="index.html" class="d-inline-block mb-4">
                         <img src="assets/images/logo.svg" alt="Harvest Haven Logo" class="logo-bg">
                     </a>
-                    <p class="text-muted mb-4">Dedicated to preserving the spirit of the harvest through fun,
+                    <p class="mb-4">Dedicated to preserving the spirit of the harvest through fun,
                         educational, and magical outdoor experiences.</p>
                     <div class="d-flex gap-3">
                         <a href="#" class="btn btn-outline-primary rounded-circle p-2"
@@ -303,32 +309,32 @@
                 <div class="col-6 col-lg-2">
                     <h4 class="h5 mb-4">Company</h4>
                     <ul class="nav flex-column gap-2">
-                        <li class="nav-item"><a href="about.html" class="nav-link p-0 text-muted">About Us</a></li>
-                        <li class="nav-item"><a href="services.html" class="nav-link p-0 text-muted">Attractions</a>
+                        <li class="nav-item"><a href="about.html" class="nav-link p-0">About Us</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link p-0">Attractions</a>
                         </li>
-                        <li class="nav-item"><a href="blog.html" class="nav-link p-0 text-muted">Blog</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link p-0">Blog</a></li>
                     </ul>
                 </div>
                 <!-- Column 3: Support -->
                 <div class="col-6 col-lg-2">
                     <h4 class="h5 mb-4">Support</h4>
                     <ul class="nav flex-column gap-2">
-                        <li class="nav-item"><a href="contact.html" class="nav-link p-0 text-muted">Contact</a></li>
-                        <li class="nav-item"><a href="pricing.html" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item"><a href="404.html" class="nav-link p-0 text-muted">FAQ</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link p-0">Contact</a></li>
+                        <li class="nav-item"><a href="pricing.html" class="nav-link p-0">Pricing</a></li>
+                        <li class="nav-item"><a href="404.html" class="nav-link p-0">FAQ</a></li>
                     </ul>
                 </div>
                 <!-- Column 4: Newsletter -->
                 <div class="col-lg-4">
                     <h4 class="h5 mb-4">Newsletter</h4>
-                    <p class="text-muted mb-4">Get early access to ticket sales and updates.</p>
+                    <p class="mb-4">Get early access to ticket sales and updates.</p>
                     <form class="newsletter-form">
                         <input type="email" class="form-control" placeholder="Email address">
                         <button class="btn btn-primary rounded-circle" type="submit"><i class="bi bi-send"></i></button>
                     </form>
                 </div>
             </div>
-            <div class="pt-5 border-top text-center text-muted">
+            <div class="pt-4 border-top text-center">
                 <p>&copy; 2026 Harvest Haven. All rights reserved.</p>
                 <a href="#" id="back-to-top" class="btn btn-primary rounded-circle shadow-lg"><i
                         class="bi bi-chevron-up"></i></a>

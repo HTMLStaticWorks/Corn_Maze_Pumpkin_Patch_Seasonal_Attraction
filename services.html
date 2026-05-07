@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 
 <body>
@@ -84,10 +86,14 @@
 
     <main class="mt-5 pt-5">
         <!-- Page Header -->
-        <section class="py-5 bg-light">
-            <div class="container text-center py-5">
+        <section class="page-hero">
+            <div class="page-hero-bg">
+                <img src="assets/images/services_hero_bg.png" alt="Services Hero">
+            </div>
+            <div class="page-hero-overlay"></div>
+            <div class="container py-5">
                 <h1 class="display-3 mb-4">Seasonal <span class="text-primary">Attractions</span></h1>
-                <p class="lead text-muted mx-auto" style="max-width: 700px;">From the thrill of the maze to the calm of
+                <p class="lead text-white mx-auto" style="max-width: 700px;">From the thrill of the maze to the calm of
                     the pumpkin patch, we have something for everyone.</p>
             </div>
         </section>
@@ -107,7 +113,7 @@
                                 </div>
                             </div>
                             <div class="card-body p-4">
-                                <p class="text-muted mb-4">Our signature attraction. Navigate through towering corn
+                                <p class="mb-4">Our signature attraction. Navigate through towering corn
                                     stalks and find all 5 hidden checkpoints.</p>
                                 <a href="service-details.html"
                                     class="btn btn-link p-0 text-primary fw-bold text-decoration-none">Learn More <i
@@ -126,7 +132,7 @@
                                 </div>
                             </div>
                             <div class="card-body p-4">
-                                <p class="text-muted mb-4">Take a relaxing tour of the entire farm on our vintage
+                                <p class="mb-4">Take a relaxing tour of the entire farm on our vintage
                                     tractor-pulled hay wagons.</p>
                                 <a href="service-details.html"
                                     class="btn btn-link p-0 text-primary fw-bold text-decoration-none">Learn More <i
@@ -146,7 +152,7 @@
                                 </div>
                             </div>
                             <div class="card-body p-4">
-                                <p class="text-muted mb-4">Browse thousands of pumpkins in all shapes and sizes. Perfect
+                                <p class="mb-4">Browse thousands of pumpkins in all shapes and sizes. Perfect
                                     for carving or cooking!</p>
                                 <a href="service-details.html"
                                     class="btn btn-link p-0 text-primary fw-bold text-decoration-none">Learn More <i
@@ -169,7 +175,7 @@
                         <span class="text-primary fw-bold text-uppercase tracking-widest mb-3 d-block">For
                             Schools</span>
                         <h2 class="display-5 mb-4">Educational Field Trips</h2>
-                        <p class="text-muted lead mb-4">Bring your classroom to the farm! We offer specialized tours
+                        <p class="lead mb-4">Bring your classroom to the farm! We offer specialized tours
                             designed to align with curriculum standards for STEM and agriculture.</p>
                         <ul class="list-unstyled mb-5">
                             <li class="mb-3 d-flex align-items-center"><img
@@ -202,19 +208,19 @@
                     <div class="col-lg-6 order-lg-1">
                         <span class="text-primary fw-bold text-uppercase tracking-widest mb-3 d-block">For Groups</span>
                         <h2 class="display-5 mb-4">Corporate & Private Events</h2>
-                        <p class="text-muted lead mb-4">Looking for a unique venue? Host your next team-building event
+                        <p class="lead mb-4">Looking for a unique venue? Host your next team-building event
                             or family reunion at Harvest Haven.</p>
                         <div class="row g-4 mb-5">
                             <div class="col-sm-6">
                                 <div class="p-3 border rounded-4">
                                     <h5 class="h6 mb-2">Team Building</h5>
-                                    <p class="small text-muted mb-0">Maze races and hayride challenges.</p>
+                                    <p class="small mb-0">Maze races and hayride challenges.</p>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="p-3 border rounded-4">
                                     <h5 class="h6 mb-2">Private Bonfires</h5>
-                                    <p class="small text-muted mb-0">Reserved areas with s'mores kits.</p>
+                                    <p class="small mb-0">Reserved areas with s'mores kits.</p>
                                 </div>
                             </div>
                         </div>
@@ -230,25 +236,27 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="display-5 mb-4">Taste the <span class="text-dark">Season</span></h2>
-                        <p class="lead mb-5 opacity-75">Our Harvest Kitchen is famous for its artisanal fall treats.
+                        <p class="lead mb-5">Our Harvest Kitchen is famous for its artisanal fall treats.
                             Made fresh every morning using local ingredients.</p>
                         <div class="row g-4">
                             <div class="col-md-4">
-                                <div class="bg-white bg-opacity-25 p-4 rounded-4">
-                                    <img src="assets/images/icons/apple.png" alt="Cider Icon" class="icon-image mb-3"
-                                        style="width: 80px; height: 80px;">
+                                <div class="bg-white bg-opacity-25 p-4 rounded-4 h-100">
+                                    <img src="assets/images/hot_apple_cider.png" alt="Hot Apple Cider" class="icon-image mb-3"
+                                        style="width: 100px; height: 100px;">
                                     <h5>Hot Apple Cider</h5>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="bg-white bg-opacity-25 p-4 rounded-4">
-                                    <i class="bi bi-record-circle display-4 d-block mb-3"></i>
+                                <div class="bg-white bg-opacity-25 p-4 rounded-4 h-100">
+                                    <img src="assets/images/cider_donuts.png" alt="Cider Donuts" class="icon-image mb-3"
+                                        style="width: 100px; height: 100px;">
                                     <h5>Cider Donuts</h5>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="bg-white bg-opacity-25 p-4 rounded-4">
-                                    <i class="bi bi-pie-chart display-4 d-block mb-3"></i>
+                                <div class="bg-white bg-opacity-25 p-4 rounded-4 h-100">
+                                    <img src="assets/images/pumpkin_pie.png" alt="Pumpkin Pie" class="icon-image mb-3"
+                                        style="width: 100px; height: 100px;">
                                     <h5>Pumpkin Pie</h5>
                                 </div>
                             </div>
@@ -260,15 +268,15 @@
     </main>
 
     <!-- Footer -->
-    <footer class="py-5 border-top bg-white">
+    <footer class="site-footer border-top">
         <div class="container">
-            <div class="row g-5 mb-5">
+            <div class="row g-5 mb-4">
                 <!-- Column 1: Brand -->
                 <div class="col-lg-4">
                     <a href="index.html" class="d-inline-block mb-4">
                         <img src="assets/images/logo.svg" alt="Harvest Haven Logo" class="logo-bg">
                     </a>
-                    <p class="text-muted mb-4">Dedicated to preserving the spirit of the harvest through fun,
+                    <p class="mb-4">Dedicated to preserving the spirit of the harvest through fun,
                         educational, and magical outdoor experiences.</p>
                     <div class="d-flex gap-3">
                         <a href="#" class="btn btn-outline-primary rounded-circle p-2"
@@ -283,32 +291,32 @@
                 <div class="col-6 col-lg-2">
                     <h4 class="h5 mb-4">Company</h4>
                     <ul class="nav flex-column gap-2">
-                        <li class="nav-item"><a href="about.html" class="nav-link p-0 text-muted">About Us</a></li>
-                        <li class="nav-item"><a href="services.html" class="nav-link p-0 text-muted">Attractions</a>
+                        <li class="nav-item"><a href="about.html" class="nav-link p-0">About Us</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link p-0">Attractions</a>
                         </li>
-                        <li class="nav-item"><a href="blog.html" class="nav-link p-0 text-muted">Blog</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link p-0">Blog</a></li>
                     </ul>
                 </div>
                 <!-- Column 3: Support -->
                 <div class="col-6 col-lg-2">
                     <h4 class="h5 mb-4">Support</h4>
                     <ul class="nav flex-column gap-2">
-                        <li class="nav-item"><a href="contact.html" class="nav-link p-0 text-muted">Contact</a></li>
-                        <li class="nav-item"><a href="pricing.html" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item"><a href="404.html" class="nav-link p-0 text-muted">FAQ</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link p-0">Contact</a></li>
+                        <li class="nav-item"><a href="pricing.html" class="nav-link p-0">Pricing</a></li>
+                        <li class="nav-item"><a href="404.html" class="nav-link p-0">FAQ</a></li>
                     </ul>
                 </div>
                 <!-- Column 4: Newsletter -->
                 <div class="col-lg-4">
                     <h4 class="h5 mb-4">Newsletter</h4>
-                    <p class="text-muted mb-4">Get early access to ticket sales and updates.</p>
+                    <p class="mb-4">Get early access to ticket sales and updates.</p>
                     <form class="newsletter-form">
                         <input type="email" class="form-control" placeholder="Email address">
                         <button class="btn btn-primary rounded-circle" type="submit"><i class="bi bi-send"></i></button>
                     </form>
                 </div>
             </div>
-            <div class="pt-5 border-top text-center text-muted">
+            <div class="pt-4 border-top text-center">
                 <p>&copy; 2026 Harvest Haven. All rights reserved.</p>
                 <a href="#" id="back-to-top" class="btn btn-primary rounded-circle shadow-lg"><i
                         class="bi bi-chevron-up"></i></a>
