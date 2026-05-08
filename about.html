@@ -53,7 +53,7 @@
     </header>
 
     <!-- Offcanvas Mobile Menu -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
         <div class="offcanvas-header border-bottom justify-content-end">
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -67,11 +67,11 @@
                 <li class="nav-item mb-2"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
             <div class="mt-4">
-                <a href="login.html" class="btn btn-primary w-100">Login / Register</a>
+                <a href="login.html" class="btn btn-primary w-100">Get Tickets</a>
             </div>
             <div class="mt-auto pt-4 border-top">
                 <div class="d-flex align-items-center justify-content-between">
-                    <span class="fw-bold">Settings</span>
+
                     <div class="d-flex gap-2">
                         <button class="rtl-toggle btn btn-sm">RTL</button>
                         <button class="theme-toggle btn btn-sm">
@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <main class="mt-5 pt-5">
+    <main>
         <!-- Page Header -->
         <section class="page-hero">
             <div class="page-hero-bg">
@@ -103,10 +103,10 @@
             <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
-                        <img src="assets/images/about_team_harvest.png" alt="Our Team"
+                        <img src="assets/images/about_team_harvest_new.png" alt="Our Team"
                             class="img-fluid rounded-5 shadow-lg">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 text-center text-lg-start">
                         <h2 class="display-5 mb-4">A Family Tradition</h2>
                         <p class="mb-4 lead">What started as a small pumpkin stall by the roadside has grown
                             into the region's premier seasonal attraction.</p>
@@ -114,11 +114,11 @@
                             thousands of visitors every autumn. Our commitment to sustainability and education remains
                             at the core of everything we do.</p>
                         <div class="row g-4">
-                            <div class="col-6">
+                            <div class="col-6 text-center text-lg-start">
                                 <h4 class="h2 fw-bold text-primary mb-1">35+</h4>
                                 <p class="fw-bold small text-uppercase">Years of Experience</p>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 text-center text-lg-start">
                                 <h4 class="h2 fw-bold text-primary mb-1">10k+</h4>
                                 <p class="fw-bold small text-uppercase">Happy Families</p>
                             </div>
@@ -139,9 +139,9 @@
                     <!-- Member 1 -->
                     <div class="col-md-6 col-lg-3">
                         <div class="card border-0 shadow-sm p-4 rounded-5 text-center h-100">
-                            <div class="bg-light rounded-circle mx-auto mb-4 d-flex align-items-center justify-center"
+                            <div class="mx-auto mb-4 overflow-hidden rounded-circle"
                                 style="width: 120px; height: 120px;">
-                                <i class="bi bi-person-circle display-4"></i>
+                                <img src="assets/images/team_member_john.png" alt="John Miller" class="img-fluid w-100 h-100 object-fit-cover">
                             </div>
                             <h4 class="h5 mb-1">John Miller</h4>
                             <p class="small mb-3">Founder & Master Farmer</p>
@@ -156,9 +156,9 @@
                     <!-- Member 2 -->
                     <div class="col-md-6 col-lg-3">
                         <div class="card border-0 shadow-sm p-4 rounded-5 text-center h-100">
-                            <div class="bg-light rounded-circle mx-auto mb-4 d-flex align-items-center justify-center"
+                            <div class="mx-auto mb-4 overflow-hidden rounded-circle"
                                 style="width: 120px; height: 120px;">
-                                <i class="bi bi-person-circle display-4"></i>
+                                <img src="assets/images/team_member_sarah.png" alt="Sarah Miller" class="img-fluid w-100 h-100 object-fit-cover">
                             </div>
                             <h4 class="h5 mb-1">Sarah Miller</h4>
                             <p class="small mb-3">Event Coordinator</p>
@@ -177,9 +177,9 @@
         <!-- New Section 4: Our Values -->
         <section>
             <div class="container">
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="p-5 bg-primary text-white rounded-5 h-100">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 p-lg-5 bg-primary text-white rounded-5 h-100 value-card">
                             <div class="fs-1 mb-4"><img
                                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2L19 12H15L22 22H2L9 12H5L12 2Z'%3E%3C/path%3E%3C/svg%3E"
                                     alt="Tree" style="width: 48px; height: 48px;"></div>
@@ -188,8 +188,8 @@
                                 generations to come. No harsh chemicals, just nature.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="p-5 bg-dark text-white rounded-5 h-100">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 p-lg-5 bg-dark text-white rounded-5 h-100 value-card">
                             <div class="fs-1 mb-4"><img
                                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20'%3E%3C/path%3E%3Cpath d='M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z'%3E%3C/path%3E%3C/svg%3E"
                                     alt="Book" style="width: 48px; height: 48px;"></div>
@@ -198,8 +198,8 @@
                                 from. Our farm is an open classroom for everyone.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="p-5 bg-light rounded-5 h-100 border">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="p-4 p-lg-5 bg-light rounded-5 h-100 border value-card">
                             <div class="fs-1 mb-4 text-primary"><img
                                     src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='%23f97316' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='9' cy='7' r='4'%3E%3C/circle%3E%3Cpath d='M23 21v-2a4 4 0 0 0-3-3.87'%3E%3C/path%3E%3Cpath d='M16 3.13a4 4 0 0 1 0 7.75'%3E%3C/path%3E%3C/svg%3E"
                                     alt="People" style="width: 48px; height: 48px;"></div>

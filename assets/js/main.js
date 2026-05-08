@@ -64,16 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedDir = localStorage.getItem('dir') || 'ltr';
     htmlElement.setAttribute('dir', savedDir);
 
-    // Navbar Scroll Effect
-    const navbar = document.querySelector('.navbar');
+    // Header Scroll Effect
+    const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
-        if (navbar) {
+        if (header) {
             if (window.scrollY > 50) {
-                navbar.classList.add('shadow-sm');
-                navbar.style.height = '80px';
+                header.classList.add('scrolled');
             } else {
-                navbar.classList.remove('shadow-sm');
-                navbar.style.height = '95px';
+                header.classList.remove('scrolled');
             }
         }
     });
