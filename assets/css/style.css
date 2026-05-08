@@ -753,21 +753,20 @@ header.scrolled .navbar {
 
 @media (max-width: 576px) {
     .newsletter-form {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 15px;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
     }
 
     .newsletter-form input {
-        width: 100%;
-        border-radius: 15px;
-        text-align: center;
+        border-radius: 50px;
+        text-align: start;
     }
 
     .newsletter-form .btn {
-        width: 100%;
-        border-radius: 15px !important;
+        width: 54px;
         height: 54px;
+        border-radius: 50% !important;
     }
 }
 
