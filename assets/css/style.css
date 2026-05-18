@@ -637,6 +637,7 @@ header.scrolled .navbar {
 .text-gradient {
     background: linear-gradient(45deg, var(--primary), #fb923c);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -752,21 +753,46 @@ header.scrolled .navbar {
 
 
 @media (max-width: 576px) {
+    /* Stack form elements vertically on mobile if the button is a normal text button */
     .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .newsletter-form input {
+        border-radius: 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Make the text button full width on mobile so it sits beautifully on the next line */
+    .newsletter-form .btn {
+        width: 100%;
+        height: 54px;
+        border-radius: 50px !important;
+        padding: 0 30px;
+    }
+
+    /* Keep the form inline if it uses a circular icon button (e.g., in the footer) */
+    .newsletter-form:has(.rounded-circle) {
         flex-direction: row;
         align-items: center;
         gap: 10px;
     }
 
-    .newsletter-form input {
+    .newsletter-form:has(.rounded-circle) input {
         border-radius: 50px;
         text-align: start;
+        width: auto;
+        flex-grow: 1;
     }
 
-    .newsletter-form .btn {
+    .newsletter-form:has(.rounded-circle) .btn {
         width: 54px;
         height: 54px;
         border-radius: 50% !important;
+        padding: 0 !important;
     }
 }
 
