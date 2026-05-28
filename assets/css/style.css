@@ -346,6 +346,7 @@ header.scrolled .navbar {
         margin-right: 0;
         position: relative;
         z-index: 10;
+        order: 2;
     }
 
     .hamburger-btn i {
@@ -353,14 +354,15 @@ header.scrolled .navbar {
     }
 
     .navbar-brand {
-        margin: 0 auto !important;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        margin: 0 auto 0 0 !important;
+        position: relative;
+        left: auto;
+        transform: none;
         width: 200px;
         /* Fixed width as requested */
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        order: 1;
     }
 
     .navbar-brand .logo-bg {
